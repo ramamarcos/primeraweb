@@ -8,7 +8,6 @@
     <link href='https://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet'>
 </head>
 <body>
-    <div class="texto-container">
     <h1 id="titulo">Blog de Ramiro Marcos Morales</h1>
     <p>Nací un 23 de mayo de 2006 en la bulliciosa provincia de Buenos Aires, Argentina. Desde joven, siempre me sentí atraído por las luces parpadeantes de las pantallas y los misteriosos códigos que se escondían detrás. Mi curiosidad innata por la tecnología me llevó a explorar el fascinante mundo de la programación.</p>
     <p>A medida que crecía entre los rincones soleados de mi provincia natal, mi fascinación por las computadoras se intensificaba. Era como si cada línea de código fuera un enigma que solo yo podía resolver. Mi adolescencia se convirtió en un viaje de descubrimiento y autodescubrimiento, y supe que mi camino estaba ligado a la creación digital.</p>
@@ -83,29 +82,5 @@
     <footer>
         <p id="copyright">Todos los derechos reservados. ©</p>
     </footer>
-    <div style="height: 1000px;">
-    <!-- Placeholder para simular contenido y hacer scroll -->
-    </div>
-    
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var textoContainer = document.querySelector(".texto-container");
-
-      // Función para manejar la animación al hacer scroll
-      function manejarScroll() {
-        var scrollPosY = window.scrollY || window.pageYOffset;
-        var opacity = 1 - scrollPosY / 400; // Ajusta este valor según tus preferencias
-
-        textoContainer.style.opacity = opacity;
-        textoContainer.style.transform = "translateY(" + (20 * (1 - opacity)) + "px)";
-      }
-
-      // Agregar el listener para manejar el scroll
-      window.addEventListener("scroll", manejarScroll);
-
-      // Llamar a la función una vez para verificar el estado inicial
-      manejarScroll();
-    });
-  </script>
 </body>
 </html>
