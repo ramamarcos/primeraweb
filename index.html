@@ -88,24 +88,24 @@
     </div>
     
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          var textoContainer = document.querySelector(".texto-container");
-    
-          // Función para manejar la animación al hacer scroll
-          function manejarScroll() {
-            var scrollPosY = window.scrollY || window.pageYOffset;
-            var opacity = scrollPosY / 400; // Ajusta este valor según tus preferencias
-    
-            textoContainer.style.opacity = opacity;
-            textoContainer.style.transform = "translateY(" + (20 * (1 - opacity)) + "px)";
-          }
-    
-          // Agregar el listener para manejar el scroll
-          window.addEventListener("scroll", manejarScroll);
-    
-          // Llamar a la función una vez para verificar el estado inicial
-          manejarScroll();
-        });
-      </script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var textoContainer = document.querySelector(".texto-container");
+
+      // Función para manejar la animación al hacer scroll
+      function manejarScroll() {
+        var scrollPosY = window.scrollY || window.pageYOffset;
+        var opacity = 1 - scrollPosY / 400; // Ajusta este valor según tus preferencias
+
+        textoContainer.style.opacity = opacity;
+        textoContainer.style.transform = "translateY(" + (20 * (1 - opacity)) + "px)";
+      }
+
+      // Agregar el listener para manejar el scroll
+      window.addEventListener("scroll", manejarScroll);
+
+      // Llamar a la función una vez para verificar el estado inicial
+      manejarScroll();
+    });
+  </script>
 </body>
 </html>
