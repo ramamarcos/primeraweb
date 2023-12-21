@@ -1,54 +1,25 @@
 body {
-    background-color: #faedcd;
-    margin: 0;
-    padding: 0;
+    background-color: black;
 }
 
-#titulo, #titulo1, #titulo2 {
-    background-color: #d62828 ;
-    color: #001219;
+h1 {
     text-align: center;
-    font-family: 'Trocchi';
+    color: red;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 p {
     text-align: center;
-    font-size: 18px;
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    -webkit-text-stroke: 1px green;
 }
 
-#ig, #mail {
-    background-color: #ffbe0b;
-    color: #8338ec;
-}
-
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-th {
-    text-align: left;
-    border: 1px solid black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-td {
-    text-align: left;
-    border: 1px solid black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.tabla-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-#copyright {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: right;
+.texto-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
