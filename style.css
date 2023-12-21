@@ -1,3 +1,16 @@
+/* Estilo base del contenedor del texto */
+.texto-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Estilo para hacer visible el texto cuando está en el área visible de la ventana */
+.texto-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body {
     background-color: #faedcd;
     margin: 0;
