@@ -23,3 +23,7 @@ function interaccionar() {
 function alerta() {
     window.alert("Este es un mensaje de alerta.")
 }
+
+function imprimir() {
+    window.print()
+}
