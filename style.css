@@ -56,3 +56,14 @@ section {
     margin-bottom: 20px;
 }
 
+.contact {
+    background-color: #eaeaea;
+}
+
+footer {
+    background-color: #ffb703;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+
+}
