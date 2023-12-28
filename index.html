@@ -1,35 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de practicas</title>
+    <title>Ramiro</title>
     <link rel="stylesheet" href="style.css">
-    <script src="practica.js"></script>
+    <script src="function.js"></script>
 </head>
 <body>
-    <h1 id="titulo">PÁGINA WEB DE PRACTICAS</h1>
-    <p id="informacion">Bienvenidos a mi pagina web donde pondre a practica mis conocimientos de JavaScript.</p>
-    <hr id="barra">
+    <header>
+        <div class="contenedor">
+            <h1>Portofolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#acerca" class="nav-link">Acerca de</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <button id="boton" type="button" onclick="primera()">OCULTAR/MOSTRAR BARRA</button>
+    <section id="inicio" class="hero">
+        <div class="contenedor">
+            <h2>Bienvenidos a mi Portofolio</h2>
+            <p>Descubre lo que hago y cómo podemos ayudarte.</p>
+        </div>
+    </section>
 
-    <p id="informacion1">Este boton lo que hace es <strong>ocultar/mostrar</strong> el elemento <strong>hr</strong>, cuyo elemento esta identificado con el ID 'barra'</p>
-    <hr>
+    <section id="acerca" class="about">
+        <div class="contenedor">
+            <h2>Acerca de Mi</h2>
+            <p>Me dedico a ofrecer mis servicios.</p>
+        </div>
+    </section>
 
-    <img id="img" src="off.gif" alt="La iamgen no puede mostrarse.">
+    <section id="proyectos" class="services">
+        <div class="contenedor">
+            <h3>Mis proyectos</h3>
+            <div class="service">
+                <h3>Proyecto 1</h3>
+                <p>Descripción</p>
+            </div>
+            <div class="service">
+                <h3>Proyecto 2</h3>
+                <p>Descripción</p>
+            </div>
+        </div>
+    </section>
 
-    <button id="boton1" type="button" onclick="interaccionar()">INTERACCIONAR CON EL FOCO DE LUZ</button>
-    <hr>
-
-    <button id="boton2" type="button" onclick="alerta()">ALERTA</button>
-
-    <p id="informacion2">Este boton lo que hace es <strong>mostrar un mensaje de alerta</strong></p>
-    <hr>
-    
-    <button id="boton3" type="button" onclick="imprimir()">IMPRIMIR PAGINA</button>
-    <p id="informacion3">Este boton lo que hace es <strong>imprimir esta pagina</strong></p>
-    <hr>
-
+    <section id="contacto" class="contact"> 
+        <div class="contenedor">
+            <h2>Contacto</h2>
+            <p>Estoy a tu disposición para responder a cualquier pregunta. No dudes en contactarme para obtener más información.</p>
+        </div>
+    </section>
 </body>
 </html>
